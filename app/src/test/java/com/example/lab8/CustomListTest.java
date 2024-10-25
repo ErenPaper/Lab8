@@ -42,4 +42,16 @@ public class CustomListTest {
         list.addCity(city);
         assertEquals(list.getCount(), initialSize + 1);
     }
+
+    @Test
+    public void testHasCity() {
+        list = MockCityList(); // Create a mock city list
+        City city = new City("Estevan", "SK");
+
+        list.addCity(city); // Add city to the list
+        assertTrue(list.hasCity(city)); // Verify the city is in the list
+
+        City nonExistentCity = new City("Toronto", "ON");
+        assertFalse(list.hasCity(nonExistentCity)); // City should not exist in the list
+    }
 }
