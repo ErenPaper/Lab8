@@ -64,14 +64,14 @@ public class CustomList extends ArrayAdapter<City> {
         return cities.size();
     }
 
-//    /**
-//     * this adds a city object to the list
-//     *the second phase, you can add the
-//     city * @param city
-//     */
-//    public void addCity(City city){
-////        cities.add(city);
-//    }
+    /**
+     * this adds a city object to the list
+     *the second phase, you can add the
+     city * @param city
+     */
+    public void addCity(City city){
+        cities.add(city);
+    }
 
     /**
      * This deletes a city from the list if it exists.
